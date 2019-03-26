@@ -9,7 +9,7 @@ import com.digitalchina.xa.it.dao.TPaidlotteryDetailsDAO;
 public class PaidReadDetailServiceImpl {
 	@Autowired
 	private TPaidlotteryDetailsDAO tPaidlotteryDetailsDAO;
-	//第二次测试
+	//第三次测试
 	
 
 }
