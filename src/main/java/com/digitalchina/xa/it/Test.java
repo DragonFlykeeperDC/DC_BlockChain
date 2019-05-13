@@ -49,9 +49,12 @@ import com.digitalchina.xa.it.util.GetPersonalDBPwdUtils;
 import com.digitalchina.xa.it.util.HttpRequest;
 import com.digitalchina.xa.it.util.ResultUtil;
 import com.digitalchina.xa.it.util.TConfigUtils;
+import com.digitalchina.xa.it.weibo.weibo4j.Friendships;
 import com.digitalchina.xa.it.weibo.weibo4j.Timeline;
 import com.digitalchina.xa.it.weibo.weibo4j.model.Status;
 import com.digitalchina.xa.it.weibo.weibo4j.model.StatusWapper;
+import com.digitalchina.xa.it.weibo.weibo4j.model.User;
+import com.digitalchina.xa.it.weibo.weibo4j.model.UserWapper;
 import com.digitalchina.xa.it.weibo.weibo4j.model.WeiboException;
 
 import scala.util.Random;
@@ -162,17 +165,33 @@ public class Test {
 //		
 ////	
 //	}
+//	@org.junit.Test
+//	public void insertNewBlock() throws IOException, ClassNotFoundException, SQLException {
+//		String token = "2.00D5amKDKJkQfE8a57353facqDv5UD";
+//		Timeline tm = new Timeline(token);
+//		try {
+//			StatusWapper status = tm.getUserTimeline();
+//			List<Status> statuses = status.getStatuses();
+//			for (Status status2 : statuses) {
+//				System.out.println(status2.getId()+"1111111");
+//			}
+//		} catch (WeiboException e) {
+//			e.printStackTrace();
+//		}
+//	}
 	@org.junit.Test
 	public void insertNewBlock() throws IOException, ClassNotFoundException, SQLException {
 		String token = "2.00D5amKDKJkQfE8a57353facqDv5UD";
-		Timeline tm = new Timeline(token);
+		Friendships tm = new Friendships(token);
 		try {
-			StatusWapper status = tm.getUserTimeline();
-			List<Status> statuses = status.getStatuses();
-			for (Status status2 : statuses) {
-				System.out.println(status2.getId()+"1111111");
+			UserWapper followersById = tm.getFollowersById("2907741475");
+			List<User> users = followersById.getUsers();
+			for (User user : users) {
+				System.out.println("adsoashfoahfh");
+				System.out.println(user.getScreenName()+"123123123");
 			}
 		} catch (WeiboException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

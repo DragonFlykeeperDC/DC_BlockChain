@@ -1,4 +1,4 @@
-package com.digitalchina.xa.it.util;
+																										package com.digitalchina.xa.it.util;
 
 
 import javax.annotation.PostConstruct;
