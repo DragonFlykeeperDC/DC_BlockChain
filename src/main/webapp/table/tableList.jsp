@@ -282,10 +282,7 @@
      <div class="aui-content aui-margin-b-15">
 		<div class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined" onClick="addField()">添加字段</div>
 		<div class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined" onClick="commit()">提交</div>
-		<ul class="aui-list aui-form-list" id = "form">
-         <li class="aui-list-item">
-        </li>
-    	</ul>
+	    <div class=" aui-btn-block"></div>
      </div>
 
 </div>
