@@ -1,110 +1,432 @@
-17965 DEBUG [2019-05-13 17:43:17]  Looking for resource handler mappings
-17966 DEBUG [2019-05-13 17:43:17]  Returning cached instance of singleton bean 'faviconHandlerMapping'
-17966 DEBUG [2019-05-13 17:43:17]  Returning cached instance of singleton bean 'resourceHandlerMapping'
-17967 DEBUG [2019-05-13 17:43:17]  Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@71cea1b8]
-17967 DEBUG [2019-05-13 17:43:17]  Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@659f226a]
-17967 DEBUG [2019-05-13 17:43:17]  Found resource handler mapping: URL pattern="/**", locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@2e463f4]
-17969 DEBUG [2019-05-13 17:43:17]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
-17978 INFO  [2019-05-13 17:43:17]  Started Test in 16.94 seconds (JVM running for 19.341)
-17982 DEBUG [2019-05-13 17:43:17]  Storing ApplicationContext in cache under key [[WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-17983 DEBUG [2019-05-13 17:43:17]  Spring test ApplicationContext cache statistics: [DefaultContextCache@25a7fedf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
-17984 DEBUG [2019-05-13 17:43:17]  Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [DefaultTestContext@131ef10 testClass = Test, testInstance = com.digitalchina.xa.it.Test@79696332, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]].
-18047 DEBUG [2019-05-13 17:43:17]  Performing dependency injection for test context [[DefaultTestContext@131ef10 testClass = Test, testInstance = com.digitalchina.xa.it.Test@79696332, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]].
-18051 DEBUG [2019-05-13 17:43:17]  Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-18054 DEBUG [2019-05-13 17:43:17]  Spring test ApplicationContext cache statistics: [DefaultContextCache@25a7fedf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
-18066 DEBUG [2019-05-13 17:43:17]  Processing injected element of bean 'com.digitalchina.xa.it.Test': AutowiredFieldElement for private com.digitalchina.xa.it.service.EthAccountService com.digitalchina.xa.it.Test.ethAccountService
-18068 DEBUG [2019-05-13 17:43:17]  Returning cached instance of singleton bean 'ethAccountService'
-18068 DEBUG [2019-05-13 17:43:17]  Autowiring by type from bean name 'com.digitalchina.xa.it.Test' to bean named 'ethAccountService'
-18070 DEBUG [2019-05-13 17:43:17]  Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
-18080 DEBUG [2019-05-13 17:43:17]  Before test method: context [DefaultTestContext@131ef10 testClass = Test, testInstance = com.digitalchina.xa.it.Test@79696332, testMethod = insertNewBlock@Test, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-18084 DEBUG [2019-05-13 17:43:17]  Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-18085 DEBUG [2019-05-13 17:43:17]  Spring test ApplicationContext cache statistics: [DefaultContextCache@25a7fedf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
-19091 INFO  [2019-05-13 17:43:18]  partitions revoked: []
-19227 DEBUG [2019-05-13 17:43:19]  Commit list: {}
-19091 INFO  [2019-05-13 17:43:18]  partitions revoked: []
-19161 INFO  [2019-05-13 17:43:19]  partitions revoked: []
-19234 DEBUG [2019-05-13 17:43:19]  Commit list: {}
-19240 DEBUG [2019-05-13 17:43:19]  Commit list: {}
-19373 DEBUG [2019-05-13 17:43:19]  Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
-19433 DEBUG [2019-05-13 17:43:19]  Request:
-19433 DEBUG [2019-05-13 17:43:19]  GET:https://api.weibo.com/2/friendships/followers.json
-19507 DEBUG [2019-05-13 17:43:19]  Authorization: OAuth2 2.00D5amKDKJkQfE8a57353facqDv5UD
-19507 DEBUG [2019-05-13 17:43:19]  API-RemoteIP: 169.254.254.136
-19698 INFO  [2019-05-13 17:43:19]  partitions assigned: []
-19705 INFO  [2019-05-13 17:43:19]  partitions assigned: [lotteryIssueSZBReward-0]
-19705 INFO  [2019-05-13 17:43:19]  partitions assigned: [lotteryBuyTicket-0]
-19712 DEBUG [2019-05-13 17:43:19]  Received: 0 records
-19712 DEBUG [2019-05-13 17:43:19]  Received: 0 records
-19737 DEBUG [2019-05-13 17:43:19]  Response:
-19737 DEBUG [2019-05-13 17:43:19]  https StatusCode:200
-19737 DEBUG [2019-05-13 17:43:19]  Server:nginx/1.6.1
-19737 DEBUG [2019-05-13 17:43:19]  Date:Mon, 13 May 2019 09:43:21 GMT
-19737 DEBUG [2019-05-13 17:43:19]  Content-Type:application/json;charset=UTF-8
-19737 DEBUG [2019-05-13 17:43:19]  Transfer-Encoding:chunked
-19737 DEBUG [2019-05-13 17:43:19]  Connection:keep-alive
-19738 DEBUG [2019-05-13 17:43:19]  Vary:Accept-Encoding
-19741 WARN  [2019-05-13 17:43:19]  Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
-19742 DEBUG [2019-05-13 17:43:19]  {"users":[],"next_cursor":5,"previous_cursor":0,"total_number":128,"display_total_number":127}
-
-19757 DEBUG [2019-05-13 17:43:19]  Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-19757 DEBUG [2019-05-13 17:43:19]  Spring test ApplicationContext cache statistics: [DefaultContextCache@25a7fedf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
-19757 DEBUG [2019-05-13 17:43:19]  Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-19758 DEBUG [2019-05-13 17:43:19]  Spring test ApplicationContext cache statistics: [DefaultContextCache@25a7fedf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
-19761 DEBUG [2019-05-13 17:43:19]  Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-19761 DEBUG [2019-05-13 17:43:19]  Spring test ApplicationContext cache statistics: [DefaultContextCache@25a7fedf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
-19762 DEBUG [2019-05-13 17:43:19]  Returning cached instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoBeans'
-19763 DEBUG [2019-05-13 17:43:19]  After test method: context [DefaultTestContext@131ef10 testClass = Test, testInstance = com.digitalchina.xa.it.Test@79696332, testMethod = insertNewBlock@Test, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-19763 DEBUG [2019-05-13 17:43:19]  Resetting RequestContextHolder for test context [DefaultTestContext@131ef10 testClass = Test, testInstance = com.digitalchina.xa.it.Test@79696332, testMethod = insertNewBlock@Test, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]].
-19764 DEBUG [2019-05-13 17:43:19]  After test class: context [DefaultTestContext@131ef10 testClass = Test, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@55b0dcab testClass = Test, locations = '{}', classes = '{class com.digitalchina.xa.it.DCBlockChainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@23faf8f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@64729b1e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1f57539, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@bd8db5a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.support.DependencyInjectionTestExecutionListener.reinjectDependencies' -> true]], class annotated with @DirtiesContext [false] with mode [null].
-19773 INFO  [2019-05-13 17:43:19]  Closing org.springframework.web.context.support.GenericWebApplicationContext@4bf48f6: startup date [Mon May 13 17:43:02 CST 2019]; root of context hierarchy
-19786 DEBUG [2019-05-13 17:43:19]  Returning cached instance of singleton bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
-19786 DEBUG [2019-05-13 17:43:19]  Returning cached instance of singleton bean 'kafkaProducerFactory'
-19787 DEBUG [2019-05-13 17:43:19]  Returning cached instance of singleton bean 'lifecycleProcessor'
-19787 INFO  [2019-05-13 17:43:19]  Stopping beans in phase 2147483547
-19788 DEBUG [2019-05-13 17:43:19]  Asking bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry' of type [class org.springframework.kafka.config.KafkaListenerEndpointRegistry] to stop
-19799 DEBUG [2019-05-13 17:43:19]  Commit list: {}
-19799 DEBUG [2019-05-13 17:43:19]  Commit list: {}
-19801 DEBUG [2019-05-13 17:43:19]  Commit list: {}
-19801 INFO  [2019-05-13 17:43:19]  Shutting down ExecutorService
-19802 INFO  [2019-05-13 17:43:19]  Shutting down ExecutorService
-19802 INFO  [2019-05-13 17:43:19]  Shutting down ExecutorService
-19847 INFO  [2019-05-13 17:43:19]  Consumer stopped
-19847 DEBUG [2019-05-13 17:43:19]  KafkaMessageListenerContainer [id=org.springframework.kafka.KafkaListenerEndpointContainer#2-0, clientIndex=-0, topicPartitions=[lotteryIssueSZBReward-0]] stopped normally
-19850 INFO  [2019-05-13 17:43:19]  Consumer stopped
-19851 DEBUG [2019-05-13 17:43:19]  KafkaMessageListenerContainer [id=org.springframework.kafka.KafkaListenerEndpointContainer#0-0, clientIndex=-0, topicPartitions=[]] stopped normally
-19874 INFO  [2019-05-13 17:43:19]  Consumer stopped
-19879 DEBUG [2019-05-13 17:43:19]  KafkaMessageListenerContainer [id=org.springframework.kafka.KafkaListenerEndpointContainer#1-0, clientIndex=-0, topicPartitions=[lotteryBuyTicket-0]] stopped normally
-19887 DEBUG [2019-05-13 17:43:19]  Bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry' completed its stop procedure
-19889 INFO  [2019-05-13 17:43:19]  Stopping beans in phase 0
-19890 DEBUG [2019-05-13 17:43:19]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@70f02c32: defining beans [org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor,org.springframework.boot.test.mock.mockito.MockitoPostProcessor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,DCBlockChainApplication,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,ethAccountController,gameController,lotteryController,paidLotteryController,routeController,tableController,utilController,walletTransactionController,globalExceptionHandler,kafkaConsumerEthAccount,kafkaConsumerLottery,kafkaProducer,kafkaUtil,ethAccountService,gameService,mnemonicService,PaidReadDetailService,systemTransactionDetailService,tConfigService,TPaidlotteryService,walletTransactionService,getPersonalDBPwdUtils,TConfigUtils,org.springframework.scheduling.annotation.SchedulingConfiguration,org.springframework.context.annotation.internalScheduledAnnotationProcessor,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.boot.autoconfigure.AutoConfigurationPackages,org.springframework.aop.config.internalAutoProxyCreator,ethAccountDAO,single_double_games_detailsDao,single_double_games_lottery_infoDao,systemBlockInfoDAO,systemTransactionDetailDAO,TConfigDAO,TPaidlotteryDetailsDAO,TPaidlotteryInfoDAO,walletTransactionDAO,org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration,org.springframework.boot.autoconfigure.condition.BeanTypeRegistry,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration,websocketContainerCustomizer,org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration,org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat,tomcatServletWebServerFactory,org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration,servletWebServerFactoryCustomizer,tomcatServletWebServerFactoryCustomizer,server-org.springframework.boot.autoconfigure.web.ServerProperties,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor,org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata,webServerFactoryCustomizerBeanPostProcessor,errorPageRegistrarBeanPostProcessor,org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,mainDispatcherServletPathProvider,spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties,org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration,dispatcherServletRegistration,org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration,org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration,defaultValidator,methodValidationPostProcessor,org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration,error,beanNameViewResolver,org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration,conventionErrorViewResolver,org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration,errorAttributes,basicErrorController,errorPageCustomizer,preserveErrorControllerTargetClassPostProcessor,spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties,org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration,requestMappingHandlerAdapter,requestMappingHandlerMapping,mvcConversionService,mvcValidator,mvcContentNegotiationManager,mvcPathMatcher,mvcUrlPathHelper,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,mvcResourceUrlProvider,defaultServletHandlerMapping,mvcUriComponentsContributor,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,mvcViewResolver,mvcHandlerMappingIntrospector,org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,defaultViewResolver,viewResolver,welcomePageHandlerMapping,requestContextFilter,org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration,hiddenHttpMethodFilter,httpPutFormContentFilter,com.alibaba.druid.spring.boot.autoconfigure.stat.DruidStatViewServletConfiguration,statViewServletRegistrationBean,com.alibaba.druid.spring.boot.autoconfigure.stat.DruidWebStatFilterConfiguration,webStatFilterRegistrationBean,com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration,statFilter,com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure,dataSource,spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties,spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties,org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration,hikariPoolDataSourceMetadataProvider,org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker,org.springframework.boot.autoconfigure.jdbc.DataSourceInitializationConfiguration,dataSourceInitializerPostProcessor,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration,sqlSessionFactory,sqlSessionTemplate,mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties,com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration,pageHelperProperties,pagehelper-com.github.pagehelper.autoconfigure.PageHelperProperties,org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration,org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration,persistenceExceptionTranslationPostProcessor,org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration,gsonBuilder,gson,standardGsonBuilderCustomizer,spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties,org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration,standardJacksonObjectMapperBuilderCustomizer,spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties,org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration,jacksonObjectMapperBuilder,org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration,parameterNamesModule,org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JodaDateTimeJacksonConfiguration,jodaDateTimeSerializationModule,org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration,jacksonObjectMapper,org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration,jsonComponentModule,org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration,stringHttpMessageConverter,spring.http.encoding-org.springframework.boot.autoconfigure.http.HttpEncodingProperties,org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration,mappingJackson2HttpMessageConverter,org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration,org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration,org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration,messageConverters,org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration,jacksonCodecCustomizer,org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration,org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration,spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties,org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration,jdbcTemplate,org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$NamedParameterJdbcTemplateConfiguration,namedParameterJdbcTemplate,org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration,spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties,org.springframework.kafka.annotation.KafkaBootstrapConfiguration,org.springframework.kafka.config.internalKafkaListenerAnnotationProcessor,org.springframework.kafka.config.internalKafkaListenerEndpointRegistry,org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration$EnableKafkaConfiguration,org.springframework.boot.autoconfigure.kafka.KafkaAnnotationDrivenConfiguration,kafkaListenerContainerFactoryConfigurer,kafkaListenerContainerFactory,org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration,kafkaTemplate,kafkaProducerListener,kafkaConsumerFactory,kafkaProducerFactory,kafkaAdmin,spring.kafka-org.springframework.boot.autoconfigure.kafka.KafkaProperties,org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration,spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration,transactionManager,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration,transactionTemplate,org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration,platformTransactionManagerCustomizers,spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties,org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration,restTemplateBuilder,org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration,tomcatWebServerFactoryCustomizer,org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration,org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration,characterEncodingFilter,localeCharsetMappingsCustomizer,org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration,multipartConfigElement,multipartResolver,spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties]; root of factory hierarchy
-19891 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'characterEncodingFilter'
-19892 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
-19893 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'httpPutFormContentFilter'
-19893 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'hiddenHttpMethodFilter'
-19894 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'requestContextFilter'
-19895 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'mvcResourceUrlProvider': [requestMappingHandlerMapping]
-19896 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'mvcValidator': [requestMappingHandlerAdapter]
-19896 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'requestMappingHandlerAdapter': [mvcUriComponentsContributor]
-19896 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'mvcValidator'
-19897 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'defaultValidator'
-19897 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'sqlSessionTemplate': [ethAccountDAO, walletTransactionDAO, systemTransactionDetailDAO, single_double_games_lottery_infoDao, single_double_games_detailsDao, TPaidlotteryDetailsDAO, TPaidlotteryInfoDAO, TConfigDAO, systemBlockInfoDAO]
-19897 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'ethAccountDAO': [ethAccountService, utilController]
-19897 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'ethAccountService': [ethAccountController, gameController, TPaidlotteryService, paidLotteryController, routeController, utilController, walletTransactionController, getPersonalDBPwdUtils, com.digitalchina.xa.it.Test]
-19898 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'TPaidlotteryService': [paidLotteryController, routeController]
-19898 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'walletTransactionDAO': [walletTransactionService]
-19899 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'systemTransactionDetailDAO': [systemTransactionDetailService]
-19899 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'single_double_games_lottery_infoDao': [gameService]
-19900 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'TPaidlotteryDetailsDAO': [PaidReadDetailService]
-19900 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'TConfigDAO': [tConfigService]
-19900 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'tConfigService': [TConfigUtils]
-19900 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'sqlSessionTemplate'
-19901 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'kafkaProducerFactory': [kafkaTemplate]
-19901 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'kafkaTemplate': [kafkaProducer]
-19901 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'kafkaProducer': [kafkaUtil]
-19901 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'kafkaUtil': [lotteryController]
-19901 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'kafkaProducerFactory'
-19902 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'dataSource': [org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration, sqlSessionFactory, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration]
-19902 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'sqlSessionFactory': [com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration]
-19902 DEBUG [2019-05-13 17:43:19]  Invoking destroy method 'close' on bean with name 'dataSource'
-19914 DEBUG [2019-05-13 17:43:19]  Invoking destroy() on bean with name 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
-19915 DEBUG [2019-05-13 17:43:19]  Retrieved dependent beans for bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': [org.springframework.context.annotation.internalConfigurationAnnotationProcessor]
+39185 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39183 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+39181 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/cookie_util.js]
+39188 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/cookie_util.js] are [/**]
+39187 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/check_login.js]
+39188 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/cookie_util.js] are {}
+39187 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+39188 DEBUG [2019-05-14 10:58:44]  Mapping [/js/cookie_util.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39188 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39188 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /js/check_login.js
+39189 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39189 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/cookie_util.js] is: -1
+39189 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@3ca3de9
+39190 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/check_login.js]
+39190 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/check_login.js] are [/**]
+39191 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/check_login.js] are {}
+39191 DEBUG [2019-05-14 10:58:44]  Mapping [/js/check_login.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39191 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/check_login.js] is: -1
+39196 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39196 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39196 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@2d4b0f4b
+39196 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39196 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39197 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+39476 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+39561 DEBUG [2019-05-14 10:58:44]  Received: 0 records
+39564 DEBUG [2019-05-14 10:58:44]  Received: 0 records
+39785 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+39835 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+39835 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/css/bootstrapValidator.min.css]
+39835 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /css/bootstrapValidator.min.css
+39837 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/css/bootstrapValidator.min.css]
+39837 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/css/bootstrapValidator.min.css] are [/**]
+39837 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/css/bootstrapValidator.min.css] are {}
+39837 DEBUG [2019-05-14 10:58:44]  Mapping [/css/bootstrapValidator.min.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39837 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/css/bootstrapValidator.min.css] is: -1
+39837 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@2d4b0f4b
+39838 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/css/aui_css/aui.css]
+39838 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /css/aui_css/aui.css
+39842 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/css/aui_css/aui.css]
+39842 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/css/aui_css/aui.css] are [/**]
+39842 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/css/aui_css/aui.css] are {}
+39842 DEBUG [2019-05-14 10:58:44]  Mapping [/css/aui_css/aui.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39842 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/css/aui_css/aui.css] is: -1
+39843 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+39844 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/bootstrapValidator.min.js]
+39844 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /js/bootstrapValidator.min.js
+39845 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/bootstrapValidator.min.js]
+39846 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/bootstrapValidator.min.js] are [/**]
+39846 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/bootstrapValidator.min.js] are {}
+39846 DEBUG [2019-05-14 10:58:44]  Mapping [/js/bootstrapValidator.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39846 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/bootstrapValidator.min.js] is: -1
+39850 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39856 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39856 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+39851 DEBUG [2019-05-14 10:58:44]  Received: 0 records
+39860 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+39860 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/aui_script/aui-tab.js]
+39861 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /js/aui_script/aui-tab.js
+39856 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@7418dda8
+39862 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/aui_script/api.js]
+39862 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /js/aui_script/api.js
+39863 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/aui_script/api.js]
+39864 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/aui_script/api.js] are [/**]
+39864 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/aui_script/api.js] are {}
+39864 DEBUG [2019-05-14 10:58:44]  Mapping [/js/aui_script/api.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39864 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/aui_script/api.js] is: -1
+39851 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@3ca3de9
+39867 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/css/aui_css/aui-pull-refresh.css]
+39867 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /css/aui_css/aui-pull-refresh.css
+39868 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/css/aui_css/aui-pull-refresh.css]
+39869 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/css/aui_css/aui-pull-refresh.css] are [/**]
+39869 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/css/aui_css/aui-pull-refresh.css] are {}
+39869 DEBUG [2019-05-14 10:58:44]  Mapping [/css/aui_css/aui-pull-refresh.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39869 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/css/aui_css/aui-pull-refresh.css] is: -1
+39862 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/aui_script/aui-tab.js]
+39872 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/aui_script/aui-tab.js] are [/**]
+39873 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/aui_script/aui-tab.js] are {}
+39873 DEBUG [2019-05-14 10:58:44]  Mapping [/js/aui_script/aui-tab.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39873 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/aui_script/aui-tab.js] is: -1
+39876 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39876 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39876 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@7418dda8
+39871 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39880 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39880 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39880 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@3ca3de9
+39880 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39881 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@2d4b0f4b
+39885 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39886 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39886 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+39978 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+39979 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/aui_script/aui-pull-refresh.js]
+39979 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /js/aui_script/aui-pull-refresh.js
+39987 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@2d4b0f4b
+39987 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/aui_script/aui-toast.js]
+39987 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /js/aui_script/aui-toast.js
+39989 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/aui_script/aui-toast.js]
+39989 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/aui_script/aui-toast.js] are [/**]
+39989 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/aui_script/aui-toast.js] are {}
+39989 DEBUG [2019-05-14 10:58:44]  Mapping [/js/aui_script/aui-toast.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39989 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/aui_script/aui-toast.js] is: -1
+39990 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/aui_script/aui-pull-refresh.js]
+39990 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/aui_script/aui-pull-refresh.js] are [/**]
+39990 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/aui_script/aui-pull-refresh.js] are {}
+39990 DEBUG [2019-05-14 10:58:44]  Mapping [/js/aui_script/aui-pull-refresh.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+39990 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/aui_script/aui-pull-refresh.js] is: -1
+39994 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39995 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39995 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@2d4b0f4b
+39996 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+39996 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+39996 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+40007 DEBUG [2019-05-14 10:58:44]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+40008 DEBUG [2019-05-14 10:58:44]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/aui_script/aui-dialog.js]
+40008 DEBUG [2019-05-14 10:58:44]  Looking up handler method for path /js/aui_script/aui-dialog.js
+40009 DEBUG [2019-05-14 10:58:44]  Did not find handler method for [/js/aui_script/aui-dialog.js]
+40009 DEBUG [2019-05-14 10:58:44]  Matching patterns for request [/js/aui_script/aui-dialog.js] are [/**]
+40009 DEBUG [2019-05-14 10:58:44]  URI Template variables for request [/js/aui_script/aui-dialog.js] are {}
+40010 DEBUG [2019-05-14 10:58:44]  Mapping [/js/aui_script/aui-dialog.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+40010 DEBUG [2019-05-14 10:58:44]  Last-Modified value for [/js/aui_script/aui-dialog.js] is: -1
+40020 DEBUG [2019-05-14 10:58:44]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+40020 DEBUG [2019-05-14 10:58:44]  Successfully completed request
+40020 DEBUG [2019-05-14 10:58:44]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+40083 DEBUG [2019-05-14 10:58:45]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+40083 DEBUG [2019-05-14 10:58:45]  Successfully completed request
+40083 DEBUG [2019-05-14 10:58:45]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+40561 DEBUG [2019-05-14 10:58:45]  Received: 0 records
+40564 DEBUG [2019-05-14 10:58:45]  Received: 0 records
+40861 DEBUG [2019-05-14 10:58:45]  Received: 0 records
+41561 DEBUG [2019-05-14 10:58:46]  Received: 0 records
+41564 DEBUG [2019-05-14 10:58:46]  Received: 0 records
+41862 DEBUG [2019-05-14 10:58:46]  Received: 0 records
+42562 DEBUG [2019-05-14 10:58:47]  Received: 0 records
+42564 DEBUG [2019-05-14 10:58:47]  Received: 0 records
+42862 DEBUG [2019-05-14 10:58:47]  Received: 0 records
+43563 DEBUG [2019-05-14 10:58:48]  Received: 0 records
+43566 DEBUG [2019-05-14 10:58:48]  Received: 0 records
+43862 DEBUG [2019-05-14 10:58:48]  Received: 0 records
+44564 DEBUG [2019-05-14 10:58:49]  Received: 0 records
+44567 DEBUG [2019-05-14 10:58:49]  Received: 0 records
+44862 DEBUG [2019-05-14 10:58:49]  Received: 0 records
+45564 DEBUG [2019-05-14 10:58:50]  Received: 0 records
+45567 DEBUG [2019-05-14 10:58:50]  Received: 0 records
+45863 DEBUG [2019-05-14 10:58:50]  Received: 0 records
+46433 DEBUG [2019-05-14 10:58:51]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+46434 DEBUG [2019-05-14 10:58:51]  DispatcherServlet with name 'dispatcherServlet' processing POST request for [/ethAccount/login]
+46435 DEBUG [2019-05-14 10:58:51]  Looking up handler method for path /ethAccount/login
+46437 DEBUG [2019-05-14 10:58:51]  Returning handler method [public com.digitalchina.xa.it.util.ResultUtil com.digitalchina.xa.it.controller.EthAccountController.login(java.lang.String,java.lang.String)]
+46437 DEBUG [2019-05-14 10:58:51]  Returning cached instance of singleton bean 'ethAccountController'
+46454 DEBUG [2019-05-14 10:58:51]  Skip CORS processing: request is from same origin
+46558 DEBUG [2019-05-14 10:58:51]  Fetching JDBC Connection from DataSource
+46565 DEBUG [2019-05-14 10:58:51]  Received: 0 records
+46567 DEBUG [2019-05-14 10:58:51]  Received: 0 records
+46667 DEBUG [2019-05-14 10:58:51]  Returning JDBC Connection to DataSource
+46870 DEBUG [2019-05-14 10:58:51]  Received: 0 records
+46970 DEBUG [2019-05-14 10:58:51]  Written [com.digitalchina.xa.it.util.ResultUtil@7686f4dc] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@49faf066]
+46971 DEBUG [2019-05-14 10:58:51]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+46972 DEBUG [2019-05-14 10:58:51]  Successfully completed request
+46972 DEBUG [2019-05-14 10:58:51]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+46995 DEBUG [2019-05-14 10:58:51]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+47568 DEBUG [2019-05-14 10:58:52]  Received: 0 records
+47570 DEBUG [2019-05-14 10:58:52]  Received: 0 records
+47871 DEBUG [2019-05-14 10:58:52]  Received: 0 records
+47877 DEBUG [2019-05-14 10:58:52]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+47956 DEBUG [2019-05-14 10:58:52]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+47957 DEBUG [2019-05-14 10:58:52]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/css/bootstrap-select.min.css]
+47957 DEBUG [2019-05-14 10:58:52]  Looking up handler method for path /css/bootstrap-select.min.css
+47960 DEBUG [2019-05-14 10:58:52]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+47960 DEBUG [2019-05-14 10:58:52]  Did not find handler method for [/css/bootstrap-select.min.css]
+47961 DEBUG [2019-05-14 10:58:52]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/js/bootstrap-select.min.js]
+47961 DEBUG [2019-05-14 10:58:52]  Matching patterns for request [/css/bootstrap-select.min.css] are [/**]
+47961 DEBUG [2019-05-14 10:58:52]  Looking up handler method for path /js/bootstrap-select.min.js
+47961 DEBUG [2019-05-14 10:58:52]  URI Template variables for request [/css/bootstrap-select.min.css] are {}
+47962 DEBUG [2019-05-14 10:58:52]  Mapping [/css/bootstrap-select.min.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+47962 DEBUG [2019-05-14 10:58:52]  Last-Modified value for [/css/bootstrap-select.min.css] is: -1
+47965 DEBUG [2019-05-14 10:58:52]  Did not find handler method for [/js/bootstrap-select.min.js]
+47965 DEBUG [2019-05-14 10:58:52]  Matching patterns for request [/js/bootstrap-select.min.js] are [/**]
+47965 DEBUG [2019-05-14 10:58:52]  URI Template variables for request [/js/bootstrap-select.min.js] are {}
+47966 DEBUG [2019-05-14 10:58:52]  Mapping [/js/bootstrap-select.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+47966 DEBUG [2019-05-14 10:58:52]  Last-Modified value for [/js/bootstrap-select.min.js] is: -1
+47972 DEBUG [2019-05-14 10:58:52]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+47973 DEBUG [2019-05-14 10:58:52]  Successfully completed request
+47973 DEBUG [2019-05-14 10:58:52]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+47978 DEBUG [2019-05-14 10:58:52]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+47978 DEBUG [2019-05-14 10:58:52]  Successfully completed request
+47979 DEBUG [2019-05-14 10:58:52]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+47999 DEBUG [2019-05-14 10:58:52]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+48001 DEBUG [2019-05-14 10:58:52]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/img/shouye.png]
+48001 DEBUG [2019-05-14 10:58:52]  Looking up handler method for path /img/shouye.png
+48004 DEBUG [2019-05-14 10:58:52]  Did not find handler method for [/img/shouye.png]
+48004 DEBUG [2019-05-14 10:58:52]  Matching patterns for request [/img/shouye.png] are [/**]
+48004 DEBUG [2019-05-14 10:58:52]  URI Template variables for request [/img/shouye.png] are {}
+48004 DEBUG [2019-05-14 10:58:52]  Mapping [/img/shouye.png] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+48004 DEBUG [2019-05-14 10:58:52]  Last-Modified value for [/img/shouye.png] is: -1
+48019 DEBUG [2019-05-14 10:58:52]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+48019 DEBUG [2019-05-14 10:58:52]  Successfully completed request
+48019 DEBUG [2019-05-14 10:58:52]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+48023 DEBUG [2019-05-14 10:58:52]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+48023 DEBUG [2019-05-14 10:58:52]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/img/zuixinjiexiao.png]
+48024 DEBUG [2019-05-14 10:58:52]  Looking up handler method for path /img/zuixinjiexiao.png
+48025 DEBUG [2019-05-14 10:58:52]  Did not find handler method for [/img/zuixinjiexiao.png]
+48025 DEBUG [2019-05-14 10:58:52]  Matching patterns for request [/img/zuixinjiexiao.png] are [/**]
+48025 DEBUG [2019-05-14 10:58:52]  URI Template variables for request [/img/zuixinjiexiao.png] are {}
+48026 DEBUG [2019-05-14 10:58:52]  Mapping [/img/zuixinjiexiao.png] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+48026 DEBUG [2019-05-14 10:58:52]  Last-Modified value for [/img/zuixinjiexiao.png] is: -1
+48030 DEBUG [2019-05-14 10:58:52]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+48030 DEBUG [2019-05-14 10:58:52]  Successfully completed request
+48031 DEBUG [2019-05-14 10:58:52]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+48071 DEBUG [2019-05-14 10:58:53]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+48071 DEBUG [2019-05-14 10:58:53]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/img/wode.png]
+48072 DEBUG [2019-05-14 10:58:53]  Looking up handler method for path /img/wode.png
+48072 DEBUG [2019-05-14 10:58:53]  Did not find handler method for [/img/wode.png]
+48073 DEBUG [2019-05-14 10:58:53]  Matching patterns for request [/img/wode.png] are [/**]
+48073 DEBUG [2019-05-14 10:58:53]  URI Template variables for request [/img/wode.png] are {}
+48073 DEBUG [2019-05-14 10:58:53]  Mapping [/img/wode.png] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@12ad1b2a]]] and 1 interceptor
+48073 DEBUG [2019-05-14 10:58:53]  Last-Modified value for [/img/wode.png] is: -1
+48076 DEBUG [2019-05-14 10:58:53]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+48077 DEBUG [2019-05-14 10:58:53]  Successfully completed request
+48077 DEBUG [2019-05-14 10:58:53]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+48150 DEBUG [2019-05-14 10:58:53]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+48150 DEBUG [2019-05-14 10:58:53]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/table/getTableList]
+48150 DEBUG [2019-05-14 10:58:53]  Looking up handler method for path /table/getTableList
+48150 DEBUG [2019-05-14 10:58:53]  Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> com.digitalchina.xa.it.controller.TableController.getTableList(java.lang.String)]
+48151 DEBUG [2019-05-14 10:58:53]  Returning cached instance of singleton bean 'tableController'
+48151 DEBUG [2019-05-14 10:58:53]  Last-Modified value for [/table/getTableList] is: -1
+48175 DEBUG [2019-05-14 10:58:53]  Executing SQL query [select table_name from table_info where itcode = 'fannl']
+48177 DEBUG [2019-05-14 10:58:53]  Fetching JDBC Connection from DataSource
+48261 DEBUG [2019-05-14 10:58:53]  Returning JDBC Connection to DataSource
+48278 DEBUG [2019-05-14 10:58:53]  Written [{msg=查找成功, success=true, list=[{table_name=test}, {table_name=hahahahah}, {table_name=ppppppp}, {table_name=okokokok}, {table_name=student}, {table_name=qweqw}, {table_name=Test1}, {table_name=杜伟伟}, {table_name=lslsls}, {table_name=水电费水电费}, {table_name=请问}, {table_name=ppo}, {table_name=sfdsdf}, {table_name=王企鹅}, {table_name=TEST0514}, {table_name=TEST测试}]}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@49faf066]
+48279 DEBUG [2019-05-14 10:58:53]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+48279 DEBUG [2019-05-14 10:58:53]  Successfully completed request
+48279 DEBUG [2019-05-14 10:58:53]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+48569 DEBUG [2019-05-14 10:58:53]  Received: 0 records
+48570 DEBUG [2019-05-14 10:58:53]  Received: 0 records
+48872 DEBUG [2019-05-14 10:58:53]  Received: 0 records
+49569 DEBUG [2019-05-14 10:58:54]  Received: 0 records
+49571 DEBUG [2019-05-14 10:58:54]  Received: 0 records
+49872 DEBUG [2019-05-14 10:58:54]  Received: 0 records
+50571 DEBUG [2019-05-14 10:58:55]  Received: 0 records
+50572 DEBUG [2019-05-14 10:58:55]  Received: 0 records
+50872 DEBUG [2019-05-14 10:58:55]  Received: 0 records
+51571 DEBUG [2019-05-14 10:58:56]  Received: 0 records
+51572 DEBUG [2019-05-14 10:58:56]  Received: 0 records
+51872 DEBUG [2019-05-14 10:58:56]  Received: 0 records
+52571 DEBUG [2019-05-14 10:58:57]  Received: 0 records
+52572 DEBUG [2019-05-14 10:58:57]  Received: 0 records
+52883 DEBUG [2019-05-14 10:58:57]  Received: 0 records
+53571 DEBUG [2019-05-14 10:58:58]  Received: 0 records
+53572 DEBUG [2019-05-14 10:58:58]  Received: 0 records
+53889 DEBUG [2019-05-14 10:58:58]  Received: 0 records
+54572 DEBUG [2019-05-14 10:58:59]  Received: 0 records
+54573 DEBUG [2019-05-14 10:58:59]  Received: 0 records
+54890 DEBUG [2019-05-14 10:58:59]  Received: 0 records
+55572 DEBUG [2019-05-14 10:59:00]  Received: 0 records
+55574 DEBUG [2019-05-14 10:59:00]  Received: 0 records
+55891 DEBUG [2019-05-14 10:59:00]  Received: 0 records
+56573 DEBUG [2019-05-14 10:59:01]  Received: 0 records
+56574 DEBUG [2019-05-14 10:59:01]  Received: 0 records
+56892 DEBUG [2019-05-14 10:59:01]  Received: 0 records
+57574 DEBUG [2019-05-14 10:59:02]  Received: 0 records
+57575 DEBUG [2019-05-14 10:59:02]  Received: 0 records
+57892 DEBUG [2019-05-14 10:59:02]  Received: 0 records
+58574 DEBUG [2019-05-14 10:59:03]  Received: 0 records
+58576 DEBUG [2019-05-14 10:59:03]  Received: 0 records
+58892 DEBUG [2019-05-14 10:59:03]  Received: 0 records
+59376 DEBUG [2019-05-14 10:59:04]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+59386 DEBUG [2019-05-14 10:59:04]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+59575 DEBUG [2019-05-14 10:59:04]  Received: 0 records
+59576 DEBUG [2019-05-14 10:59:04]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@41725089
+59576 DEBUG [2019-05-14 10:59:04]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/table/getTableList]
+59576 DEBUG [2019-05-14 10:59:04]  Looking up handler method for path /table/getTableList
+59576 DEBUG [2019-05-14 10:59:04]  Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> com.digitalchina.xa.it.controller.TableController.getTableList(java.lang.String)]
+59577 DEBUG [2019-05-14 10:59:04]  Received: 0 records
+59577 DEBUG [2019-05-14 10:59:04]  Returning cached instance of singleton bean 'tableController'
+59578 DEBUG [2019-05-14 10:59:04]  Last-Modified value for [/table/getTableList] is: -1
+59580 DEBUG [2019-05-14 10:59:04]  Executing SQL query [select table_name from table_info where itcode = 'fannl']
+59581 DEBUG [2019-05-14 10:59:04]  Fetching JDBC Connection from DataSource
+59606 DEBUG [2019-05-14 10:59:04]  Bound request context to thread: org.apache.catalina.connector.RequestFacade@4a10fc30
+59610 DEBUG [2019-05-14 10:59:04]  DispatcherServlet with name 'dispatcherServlet' processing GET request for [/favicon.ico]
+59611 DEBUG [2019-05-14 10:59:04]  Matching patterns for request [/favicon.ico] are [/**/favicon.ico]
+59611 DEBUG [2019-05-14 10:59:04]  URI Template variables for request [/favicon.ico] are {}
+59611 DEBUG [2019-05-14 10:59:04]  Mapping [/favicon.ico] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5f631ca0]]] and 1 interceptor
+59612 DEBUG [2019-05-14 10:59:04]  Last-Modified value for [/favicon.ico] is: -1
+59639 DEBUG [2019-05-14 10:59:04]  Returning JDBC Connection to DataSource
+59640 DEBUG [2019-05-14 10:59:04]  Written [{msg=查找成功, success=true, list=[{table_name=test}, {table_name=hahahahah}, {table_name=ppppppp}, {table_name=okokokok}, {table_name=student}, {table_name=qweqw}, {table_name=Test1}, {table_name=杜伟伟}, {table_name=lslsls}, {table_name=水电费水电费}, {table_name=请问}, {table_name=ppo}, {table_name=sfdsdf}, {table_name=王企鹅}, {table_name=TEST0514}, {table_name=TEST测试}]}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@49faf066]
+59641 DEBUG [2019-05-14 10:59:04]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+59641 DEBUG [2019-05-14 10:59:04]  Successfully completed request
+59641 DEBUG [2019-05-14 10:59:04]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@41725089
+59642 DEBUG [2019-05-14 10:59:04]  Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+59642 DEBUG [2019-05-14 10:59:04]  Successfully completed request
+59642 DEBUG [2019-05-14 10:59:04]  Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@4a10fc30
+59892 DEBUG [2019-05-14 10:59:04]  Received: 0 records
+60576 DEBUG [2019-05-14 10:59:05]  Received: 0 records
+60578 DEBUG [2019-05-14 10:59:05]  Received: 0 records
+60892 DEBUG [2019-05-14 10:59:05]  Received: 0 records
+61577 DEBUG [2019-05-14 10:59:06]  Received: 0 records
+61578 DEBUG [2019-05-14 10:59:06]  Received: 0 records
+61892 DEBUG [2019-05-14 10:59:06]  Received: 0 records
+62578 DEBUG [2019-05-14 10:59:07]  Received: 0 records
+62578 DEBUG [2019-05-14 10:59:07]  Received: 0 records
+62892 DEBUG [2019-05-14 10:59:07]  Received: 0 records
+63578 DEBUG [2019-05-14 10:59:08]  Received: 0 records
+63578 DEBUG [2019-05-14 10:59:08]  Received: 0 records
+63893 DEBUG [2019-05-14 10:59:08]  Received: 0 records
+64579 DEBUG [2019-05-14 10:59:09]  Received: 0 records
+64579 DEBUG [2019-05-14 10:59:09]  Received: 0 records
+64894 DEBUG [2019-05-14 10:59:09]  Received: 0 records
+65579 DEBUG [2019-05-14 10:59:10]  Received: 0 records
+65580 DEBUG [2019-05-14 10:59:10]  Received: 0 records
+65894 DEBUG [2019-05-14 10:59:10]  Received: 0 records
+66579 DEBUG [2019-05-14 10:59:11]  Received: 0 records
+66581 DEBUG [2019-05-14 10:59:11]  Received: 0 records
+66915 DEBUG [2019-05-14 10:59:11]  Received: 0 records
+67579 DEBUG [2019-05-14 10:59:12]  Received: 0 records
+67582 DEBUG [2019-05-14 10:59:12]  Received: 0 records
+67915 DEBUG [2019-05-14 10:59:12]  Received: 0 records
+68580 DEBUG [2019-05-14 10:59:13]  Received: 0 records
+68583 DEBUG [2019-05-14 10:59:13]  Received: 0 records
+68916 DEBUG [2019-05-14 10:59:13]  Received: 0 records
+69581 DEBUG [2019-05-14 10:59:14]  Received: 0 records
+69583 DEBUG [2019-05-14 10:59:14]  Received: 0 records
+69917 DEBUG [2019-05-14 10:59:14]  Received: 0 records
+70581 DEBUG [2019-05-14 10:59:15]  Received: 0 records
+70584 DEBUG [2019-05-14 10:59:15]  Received: 0 records
+70917 DEBUG [2019-05-14 10:59:15]  Received: 0 records
+71582 DEBUG [2019-05-14 10:59:16]  Received: 0 records
+71585 DEBUG [2019-05-14 10:59:16]  Received: 0 records
+71918 DEBUG [2019-05-14 10:59:16]  Received: 0 records
+72582 DEBUG [2019-05-14 10:59:17]  Received: 0 records
+72585 DEBUG [2019-05-14 10:59:17]  Received: 0 records
+72919 DEBUG [2019-05-14 10:59:17]  Received: 0 records
+73583 DEBUG [2019-05-14 10:59:18]  Received: 0 records
+73586 DEBUG [2019-05-14 10:59:18]  Received: 0 records
+73920 DEBUG [2019-05-14 10:59:18]  Received: 0 records
+74584 DEBUG [2019-05-14 10:59:19]  Received: 0 records
+74587 DEBUG [2019-05-14 10:59:19]  Received: 0 records
+74921 DEBUG [2019-05-14 10:59:19]  Received: 0 records
+75584 DEBUG [2019-05-14 10:59:20]  Received: 0 records
+75587 DEBUG [2019-05-14 10:59:20]  Received: 0 records
+75922 DEBUG [2019-05-14 10:59:20]  Received: 0 records
+76584 DEBUG [2019-05-14 10:59:21]  Received: 0 records
+76588 DEBUG [2019-05-14 10:59:21]  Received: 0 records
+76922 DEBUG [2019-05-14 10:59:21]  Received: 0 records
+77585 DEBUG [2019-05-14 10:59:22]  Received: 0 records
+77589 DEBUG [2019-05-14 10:59:22]  Received: 0 records
+77923 DEBUG [2019-05-14 10:59:22]  Received: 0 records
+78586 DEBUG [2019-05-14 10:59:23]  Received: 0 records
+78593 DEBUG [2019-05-14 10:59:23]  Received: 0 records
+78923 DEBUG [2019-05-14 10:59:23]  Received: 0 records
+79586 DEBUG [2019-05-14 10:59:24]  Received: 0 records
+79594 DEBUG [2019-05-14 10:59:24]  Received: 0 records
+79923 DEBUG [2019-05-14 10:59:24]  Received: 0 records
+80586 DEBUG [2019-05-14 10:59:25]  Received: 0 records
+80594 DEBUG [2019-05-14 10:59:25]  Received: 0 records
+80924 DEBUG [2019-05-14 10:59:25]  Received: 0 records
+81587 DEBUG [2019-05-14 10:59:26]  Received: 0 records
+81595 DEBUG [2019-05-14 10:59:26]  Received: 0 records
+81924 DEBUG [2019-05-14 10:59:26]  Received: 0 records
+82587 DEBUG [2019-05-14 10:59:27]  Received: 0 records
+82595 DEBUG [2019-05-14 10:59:27]  Received: 0 records
+82925 DEBUG [2019-05-14 10:59:27]  Received: 0 records
+83587 DEBUG [2019-05-14 10:59:28]  Received: 0 records
+83596 DEBUG [2019-05-14 10:59:28]  Received: 0 records
+83926 DEBUG [2019-05-14 10:59:28]  Received: 0 records
+84587 DEBUG [2019-05-14 10:59:29]  Received: 0 records
+84596 DEBUG [2019-05-14 10:59:29]  Received: 0 records
+84927 DEBUG [2019-05-14 10:59:29]  Received: 0 records
+85587 DEBUG [2019-05-14 10:59:30]  Received: 0 records
+85596 DEBUG [2019-05-14 10:59:30]  Received: 0 records
+85928 DEBUG [2019-05-14 10:59:30]  Received: 0 records
+86588 DEBUG [2019-05-14 10:59:31]  Received: 0 records
+86597 DEBUG [2019-05-14 10:59:31]  Received: 0 records
+86930 DEBUG [2019-05-14 10:59:31]  Received: 0 records
+87589 DEBUG [2019-05-14 10:59:32]  Received: 0 records
+87597 DEBUG [2019-05-14 10:59:32]  Received: 0 records
+87930 DEBUG [2019-05-14 10:59:32]  Received: 0 records
+88590 DEBUG [2019-05-14 10:59:33]  Received: 0 records
+88598 DEBUG [2019-05-14 10:59:33]  Received: 0 records
+88931 DEBUG [2019-05-14 10:59:33]  Received: 0 records
+89591 DEBUG [2019-05-14 10:59:34]  Received: 0 records
+89598 DEBUG [2019-05-14 10:59:34]  Received: 0 records
+89931 DEBUG [2019-05-14 10:59:34]  Received: 0 records
+90592 DEBUG [2019-05-14 10:59:35]  Received: 0 records
+90598 DEBUG [2019-05-14 10:59:35]  Received: 0 records
+90932 DEBUG [2019-05-14 10:59:35]  Received: 0 records
+91592 DEBUG [2019-05-14 10:59:36]  Received: 0 records
+91598 DEBUG [2019-05-14 10:59:36]  Received: 0 records
+91933 DEBUG [2019-05-14 10:59:36]  Received: 0 records
+92592 DEBUG [2019-05-14 10:59:37]  Received: 0 records
+92599 DEBUG [2019-05-14 10:59:37]  Received: 0 records
+92934 DEBUG [2019-05-14 10:59:37]  Received: 0 records
+93598 DEBUG [2019-05-14 10:59:38]  Received: 0 records
+93600 DEBUG [2019-05-14 10:59:38]  Received: 0 records
+94225 DEBUG [2019-05-14 10:59:39]  Received: 0 records
+94654 DEBUG [2019-05-14 10:59:39]  Received: 0 records
+94719 DEBUG [2019-05-14 10:59:39]  Received: 0 records
+95226 DEBUG [2019-05-14 10:59:40]  Received: 0 records
+95654 DEBUG [2019-05-14 10:59:40]  Received: 0 records
+95719 DEBUG [2019-05-14 10:59:40]  Received: 0 records
+96226 DEBUG [2019-05-14 10:59:41]  Received: 0 records
+96655 DEBUG [2019-05-14 10:59:41]  Received: 0 records
+96719 DEBUG [2019-05-14 10:59:41]  Received: 0 records
+97226 DEBUG [2019-05-14 10:59:42]  Received: 0 records
+97659 DEBUG [2019-05-14 10:59:42]  Received: 0 records
+97721 DEBUG [2019-05-14 10:59:42]  Received: 0 records
+98226 DEBUG [2019-05-14 10:59:43]  Received: 0 records
+98659 DEBUG [2019-05-14 10:59:43]  Received: 0 records
+98721 DEBUG [2019-05-14 10:59:43]  Received: 0 records
+99226 DEBUG [2019-05-14 10:59:44]  Received: 0 records
+99660 DEBUG [2019-05-14 10:59:44]  Received: 0 records
+99727 DEBUG [2019-05-14 10:59:44]  Received: 0 records
+100239 DEBUG [2019-05-14 10:59:45]  Received: 0 records
+100661 DEBUG [2019-05-14 10:59:45]  Received: 0 records
+100729 DEBUG [2019-05-14 10:59:45]  Received: 0 records
+101240 DEBUG [2019-05-14 10:59:46]  Received: 0 records
+101662 DEBUG [2019-05-14 10:59:46]  Received: 0 records
+101729 DEBUG [2019-05-14 10:59:46]  Received: 0 records
+102241 DEBUG [2019-05-14 10:59:47]  Received: 0 records
+102662 DEBUG [2019-05-14 10:59:47]  Received: 0 records
+102729 DEBUG [2019-05-14 10:59:47]  Received: 0 records
+103241 DEBUG [2019-05-14 10:59:48]  Received: 0 records
+103663 DEBUG [2019-05-14 10:59:48]  Received: 0 records
+103739 DEBUG [2019-05-14 10:59:48]  Received: 0 records
+104242 DEBUG [2019-05-14 10:59:49]  Received: 0 records
+104783 DEBUG [2019-05-14 10:59:49]  Received: 0 records
+104791 DEBUG [2019-05-14 10:59:49]  Received: 0 records
+105250 DEBUG [2019-05-14 10:59:50]  Received: 0 records
+105785 DEBUG [2019-05-14 10:59:50]  Received: 0 records
+105793 DEBUG [2019-05-14 10:59:50]  Received: 0 records
+106250 DEBUG [2019-05-14 10:59:51]  Received: 0 records

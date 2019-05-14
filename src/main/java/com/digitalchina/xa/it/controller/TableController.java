@@ -149,6 +149,7 @@ public class TableController {
 	 */
 	@ResponseBody
 	@GetMapping("/getTableList")
+	@Transactional
 	public Map<String, Object> getTableList(@RequestParam(name = "itcode", required = true)String itcode){
 		HashMap<String,Object> map = new HashMap<>();
 		List<Map<String,Object>> list = jdbc.queryForList("select table_name from table_info where itcode = '" + itcode + "'");
@@ -195,6 +196,7 @@ public class TableController {
 	 */
 	@ResponseBody
 	@GetMapping("/getOne")
+	@Transactional
 	public Map<String, Object> getTableInfoByTableName(@RequestParam(name = "tableName", required = true)String tableName,
 			@RequestParam(name = "itcode",required = true)String itcode){
 		HashMap<String,Object> map = new HashMap<>();
@@ -330,6 +332,7 @@ public class TableController {
 	 */
 	@ResponseBody
 	@RequestMapping("/uploadFile")
+	@Transactional
 	public Map<String, Object> uploadFile(@RequestParam MultipartFile file,@RequestParam String itcode) throws IllegalStateException, IOException, ClassNotFoundException, SQLException {
 		System.out.println(itcode);
 		HashMap<String, Object> map = new HashMap<>();
