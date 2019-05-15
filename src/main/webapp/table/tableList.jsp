@@ -124,31 +124,23 @@
             	var jsonStr2 = jsonStr1.replace(/\s/g,'');
             	jsonStr2 = jsonStr1.replace(/#/g,'');
         		showDefault("loading");
-            	 $.ajax({
-            		type:"GET",
-            		url:"/wallet/getCheckUp.jsp",
-            		data:{"jsonStr":jsonStr2},
-            		dataType:"text",
-            		success:function(data){
-            			 $.ajax({
-	                            type: "GET",
-	                            url: baseUrl + "table/createTable",
-	                            data: {"param":data},
-	                            dataType: "json",
-	                            success: function(data) {
-	                                $("#create").hide();
-	                                $("#list").show();
-	                                if(data.success){
-		                                alert(data.msg);
-		                                window.location.href = "/table/tableList.jsp";
-	                                }else{
-	                                	alert("建表失败，请检查表名，字段名是否符合要求（表名字段名不能以数字开头，不能过长）");
-	                                	window.location.reload();
-	                                }
-	                            }
-            			 });
-            		}
-            	});  
+            	$.ajax({
+                type: "GET",
+	            url: baseUrl + "table/createTable",
+	            data: {"param":jsonStr2},
+	            dataType: "json",
+	            success: function(data) {
+	            	$("#create").hide();
+	            	$("#list").show();
+	           		if(data.success){
+		        		alert(data.msg);
+		        		window.location.href = "/table/tableList.jsp";
+	           			}else{
+	            		alert("建表失败，请检查表名，字段名是否符合要求（表名字段名不能以数字开头，不能过长）");
+	            		window.location.reload();
+	             		}
+	             	}
+            	});
             }
         window.upload = function(){
         	showDefault("loading");

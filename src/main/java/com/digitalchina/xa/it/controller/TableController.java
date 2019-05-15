@@ -75,11 +75,10 @@ public class TableController {
 	@Transactional
 	public Map<String, Object> getData(
 			@RequestParam(name = "param", required = true) String param) throws ClassNotFoundException, SQLException{
-		
+		HashMap<String,Object> modelMap = new HashMap<>();
+		System.out.println(param);
 		String jsonValue = param.trim();
-		System.out.println(jsonValue);
-		Map<String, Object> modelMap = DecryptAndDecodeUtils.decryptAndDecode(jsonValue);
-		JSONObject jsonObj = JSONObject.parseObject((String) modelMap.get("data"));
+		JSONObject jsonObj = JSONObject.parseObject(param);
 		System.out.println(jsonObj);
 		System.out.println(jsonObj.size());
 		String field = "";
