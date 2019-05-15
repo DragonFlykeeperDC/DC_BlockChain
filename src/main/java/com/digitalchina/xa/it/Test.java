@@ -3,9 +3,11 @@ package com.digitalchina.xa.it;
 
 
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.BigInteger;
 import java.sql.Array;
 import java.sql.Connection;
@@ -50,12 +52,14 @@ import com.digitalchina.xa.it.util.HttpRequest;
 import com.digitalchina.xa.it.util.ResultUtil;
 import com.digitalchina.xa.it.util.TConfigUtils;
 import com.digitalchina.xa.it.weibo.weibo4j.Friendships;
+import com.digitalchina.xa.it.weibo.weibo4j.Oauth;
 import com.digitalchina.xa.it.weibo.weibo4j.Timeline;
 import com.digitalchina.xa.it.weibo.weibo4j.model.Status;
 import com.digitalchina.xa.it.weibo.weibo4j.model.StatusWapper;
 import com.digitalchina.xa.it.weibo.weibo4j.model.User;
 import com.digitalchina.xa.it.weibo.weibo4j.model.UserWapper;
 import com.digitalchina.xa.it.weibo.weibo4j.model.WeiboException;
+import com.digitalchina.xa.it.weibo.weibo4j.util.BareBonesBrowserLaunch;
 
 import scala.util.Random;
 
@@ -180,20 +184,13 @@ public class Test {
 //		}
 //	}
 	@org.junit.Test
-	public void insertNewBlock() throws IOException, ClassNotFoundException, SQLException {
-		String token = "2.00D5amKDKJkQfE8a57353facqDv5UD";
-		Friendships tm = new Friendships(token);
-		try {
-			UserWapper followersById = tm.getFollowersById("2907741475");
-			List<User> users = followersById.getUsers();
-			for (User user : users) {
-				System.out.println("adsoashfoahfh");
-				System.out.println(user.getScreenName()+"123123123");
-			}
-		} catch (WeiboException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void insertNewBlock() throws IOException, ClassNotFoundException, SQLException, WeiboException {
+		Oauth oauth = new Oauth();
+		BareBonesBrowserLaunch.openURL(oauth.authorize("code"));
+		System.out.println(oauth.authorize("code"));
+		System.out.print("Hit enter when it's done.[Enter]:");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String code = br.readLine();
 	}
 	
 }
