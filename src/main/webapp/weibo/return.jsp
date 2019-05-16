@@ -49,12 +49,26 @@
         		type:"GET",
         		url:"/weibo/code",
         		data:{
+        			"itcode":"fannl",
         			"code":code,
         			"screen_name":screen_name
         		},
         		dataType:"json",
         		success:function(data){
         				alert(data.success);
+        				alert("请重新授权！");
+        		}
+        	});
+        }
+        window.openURL = function(){
+        	alert("111");
+        	$.ajax({
+        		type:"GET",
+        		url:"/weibo/openURL",
+        		data:{  },
+        		dataType:"json",
+        		success:function(data){
+        			
         		}
         	});
         }
@@ -77,6 +91,7 @@
         </li>
         </ul>
 	<div class="aui-content aui-margin-b-15">
+		<div class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined" onClick="openURL()">授权</div>
 		<div class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined" onClick="commit()">提交</div>
      </div>
 </div> 

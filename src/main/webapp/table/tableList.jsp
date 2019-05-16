@@ -136,6 +136,7 @@
 		        		alert(data.msg);
 		        		window.location.href = "/table/tableList.jsp";
 	           			}else{
+	           			alert(data.msg);
 	            		alert("建表失败，请检查表名，字段名是否符合要求（表名字段名不能以数字开头，不能过长）");
 	            		window.location.reload();
 	             		}

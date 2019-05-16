@@ -73,7 +73,7 @@ public class TableController {
 	@ResponseBody
 	@GetMapping("/createTable")
 	@Transactional
-	public Map<String, Object> getData(
+	public Map<String, Object> createTable(
 			@RequestParam(name = "param", required = true) String param) throws ClassNotFoundException, SQLException{
 		HashMap<String,Object> modelMap = new HashMap<>();
 		System.out.println(param);
@@ -90,14 +90,17 @@ public class TableController {
 		String itcode = jsonObj.getString("itcode");
 		System.out.println(itcode);
 		System.out.println("查找数据库中有无重名表");
-		List<Map<String,Object>> list = jdbc.queryForList("select table_name from information_schema.tables where table_schema='dc_blockchain' and table_name = '"+tableName+"'");
-		System.out.println(list.size());
-		if (!(list.size() == 0)) {
-			modelMap.put("error", "表名已存在！");
+//		List<Map<String,Object>> list = jdbc.queryForList("select table_name from information_schema.tables where table_schema='"+itcode+"' and table_name = '"+tableName+"'");
+		String sql = "select table_name from information_schema.tables where table_schema='"+itcode+"' and table_name = '"+tableName+"'";
+		System.out.println(sql);
+		int i = JDBCUtils.executeQuerySQL(sql, itcode, GetPersonalDBPwdUtils.findPersonalDBPwd(itcode));
+		System.out.println(i);
+		if (i > 0) {
+			modelMap.put("msg", "表名已存在！");
 			modelMap.put("success", false);
 			return modelMap;
 		}
-		String sql = "CREATE TABLE "+tableName+" ("
+		sql = "CREATE TABLE "+tableName+" ("
 				+ field.substring(0, field.length()-1)
 				+")";
 		System.out.println("CREATE TABLE "+tableName+" ("

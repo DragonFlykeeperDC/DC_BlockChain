@@ -54,6 +54,7 @@ import com.digitalchina.xa.it.util.TConfigUtils;
 import com.digitalchina.xa.it.weibo.weibo4j.Friendships;
 import com.digitalchina.xa.it.weibo.weibo4j.Oauth;
 import com.digitalchina.xa.it.weibo.weibo4j.Timeline;
+import com.digitalchina.xa.it.weibo.weibo4j.http.AccessToken;
 import com.digitalchina.xa.it.weibo.weibo4j.model.Status;
 import com.digitalchina.xa.it.weibo.weibo4j.model.StatusWapper;
 import com.digitalchina.xa.it.weibo.weibo4j.model.User;
@@ -191,6 +192,29 @@ public class Test {
 		System.out.print("Hit enter when it's done.[Enter]:");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String code = br.readLine();
+		try{ 
+			AccessToken accessToken = oauth.getAccessTokenByCode(code);
+			String token = accessToken.getAccessToken();
+			System.out.println(token);
+//			String token = "2.00D5amKDKJkQfE8a57353facqDv5UD";
+			Timeline tm = new Timeline(token);
+			try {
+				StatusWapper status = tm.getUserTimeline();
+				List<Status> statuses = status.getStatuses();
+				for (Status status2 : statuses) {
+					System.out.println(status2.getText());
+					System.out.println(status2.getGeo());
+					
+				}
+			} catch (WeiboException e) {
+				e.printStackTrace();
+			}
+		} catch (WeiboException e) {
+			if(401 == e.getStatusCode()){
+			}else{
+				e.printStackTrace();
+			}
+		}
 	}
 	
 }
