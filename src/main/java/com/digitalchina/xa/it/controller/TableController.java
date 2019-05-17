@@ -396,9 +396,8 @@ public class TableController {
 			} else {
 				fieldValues = "";
 				for (int j = 0; j <= lastCellNum; j++) {
-					if (!(row.getCell(j) == null)) {
+					System.out.println(row.getCell(0));
 						fieldValues += "'"+row.getCell(j) + "',";
-					}
 				}
 				//每次插入一行值
 				sql = "INSERT INTO " + filename + " VALUES(" + fieldValues.substring(0, fieldValues.length() - 1) + ")";

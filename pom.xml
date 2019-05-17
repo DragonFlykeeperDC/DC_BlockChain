@@ -162,6 +162,34 @@
             <artifactId>poi-ooxml</artifactId> 
             <version>3.9</version> 
         </dependency>
+        <dependency>
+    		<groupId>org.zenframework.z8.dependencies.commons</groupId>
+    		<artifactId>log4j-1.2.17</artifactId>
+  			  <version>2.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.xwzhou</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>0.0.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>commons-httpclient</groupId>
+		    <artifactId>commons-httpclient</artifactId>
+		    <version>3.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.ow2.util.bundles</groupId>
+		    <artifactId>commons-logging-1.1.1</artifactId>
+		    <version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.zenframework.z8.dependencies.commons</groupId>
+		    <artifactId>log4j-1.2.17</artifactId>
+		    <version>2.0</version>
+		</dependency>
+		
+        
 	</dependencies>
 
 	<build>

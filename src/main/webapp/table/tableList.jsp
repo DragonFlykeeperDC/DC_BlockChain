@@ -83,7 +83,7 @@
             		for(var i = 0;i<list.length;i++){
             			tableName = list[i].table_name;
             			listHtml +="<li class='aui-list-item' onclick='addData(\""+tableName+"\")'><div class='aui-list-item-inner'><div class='aui-list-item-label'>表名</div><div class='aui-list-item-input' >"+tableName+"</div></div></li>";
-            			if(i == list.length-1){
+            			if(i == list.length-1 &&list.length-1 > 13 ){
             				listHtml += "<li class='aui-list-item' onclick='addData(\""+tableName+"\")'><div class='aui-list-item-inner'><div class='aui-list-item-label'>表名</div><div class='aui-list-item-input' >"+tableName+"</div></div></li>";
             			}
             		}

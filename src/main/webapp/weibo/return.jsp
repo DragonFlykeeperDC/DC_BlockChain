@@ -43,25 +43,28 @@
         <script type="text/javascript">
         window.commit = function(){
         	var screen_name = $("#screen_name").val();
+        	var itcode = $("#itcode").val();
         	alert(screen_name);
         	var code = '<%=code%>';
         	$.ajax({
         		type:"GET",
         		url:"/weibo/code",
         		data:{
-        			"itcode":"fannl",
+        			"itcode":itcode,
         			"code":code,
         			"screen_name":screen_name
         		},
         		dataType:"json",
         		success:function(data){
-        				alert(data.success);
-        				alert("请重新授权！");
+        				if(data.success){
+        					alert("添加成功");
+        				}else{
+        				alert("请重新授权导入！");
+        				}
         		}
         	});
         }
         window.openURL = function(){
-        	alert("111");
         	$.ajax({
         		type:"GET",
         		url:"/weibo/openURL",
@@ -86,6 +89,16 @@
                 </div>
                 <div class="aui-list-item-input">
                     <input type="text" placeholder="微博名" id="screen_name">
+                </div>
+            </div>
+        </li>
+         <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    itcode
+                </div>
+                <div class="aui-list-item-input">
+                    <input type="text" placeholder="itcode" id="itcode">
                 </div>
             </div>
         </li>

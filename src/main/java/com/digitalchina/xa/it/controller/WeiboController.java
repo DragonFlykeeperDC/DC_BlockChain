@@ -40,9 +40,12 @@ public class WeiboController {
 	@RequestMapping("/openURL")
 	@Transactional
 	public void openURL() throws WeiboException {
-		Oauth oauth = new Oauth();
-		BareBonesBrowserLaunch.openURL(oauth.authorize("code"));
-		System.out.println(oauth.authorize("code"));
+		try {
+			Oauth oauth = new Oauth();
+			BareBonesBrowserLaunch.openURL(oauth.authorize("code"));
+			System.out.println(oauth.authorize("code"));
+		} catch (Exception e) {
+		}
 	}
 	
 	@ResponseBody
